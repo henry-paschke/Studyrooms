@@ -9,6 +9,9 @@ import openai
 import os
 from dotenv import load_dotenv
 
+from fastapi.middleware.cors import CORSMiddleware
+
+
 load_dotenv()  # Load environment variables from .env
 client = openai.OpenAI(
     api_key=os.getenv("OPENAI_KEY")
@@ -36,6 +39,14 @@ def is_safe_for_work(message, threshold=0.01):  # Set sensitivity level
 
 ### Create FastAPI instance with custom docs and openapi url
 app = FastAPI(docs_url="/api/py/docs", openapi_url="/api/py/openapi.json")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Allow all origins (or specify your frontend URL)
+    allow_credentials=True,
+    allow_methods=["*"],  # Allow all methods (or restrict to specific methods)
+    allow_headers=["*"],  # Allow all headers
+)
 
 prisma = Prisma()
 
