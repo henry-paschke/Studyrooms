@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "prestart": "prisma generate",
-    "fastapi-dev": "python -m uvicorn api.index:app --reload",
+    "fastapi-dev": "pip install -r requirements.txt && python -m uvicorn api.index:app --reload",
     "next-dev": "next dev",
     "dev": "concurrently \"npm run next-dev\" \"npm run fastapi-dev\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build"
+    "vercel-build": "pip3 install -r requirements.txt && prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
