@@ -1,0 +1,85 @@
+.scrollbarthin::-webkit-scrollbar-track {
+    background-color: transparent; /* Make the track invisible */
+  }
+
+  /* Style the scrollbar itself */
+  .scrollbarthin::-webkit-scrollbar {
+    width: 8px; /* Adjust width of the scrollbar */
+  }
+
+  /* Style the scrollbar thumb (handle) */
+  .scrollbarthin::-webkit-scrollbar-thumb {
+    background-color: #fbfbfb; /* Customize the thumb color */
+    border-radius: 10px; /* Optional: round corners of the thumb */
+  }
+
+  .rosterSidebar{
+    position: absolute;
+    background-color: rgb(100, 90, 165);
+    top: 75px;
+    bottom: -75px;
+    width: 300px;
+    z-index: 51;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    right: -300px;
+    border-top-left-radius: 1rem;
+    transition: all ease-in-out 300ms;
+    overflow-y: auto;
+  }
+
+  .rosterSidebar::-webkit-scrollbar-track {
+    background-color: transparent; /* Make the track invisible */
+  }
+
+  /* Style the scrollbar itself */
+  .rosterSidebar::-webkit-scrollbar {
+    width: 8px; /* Adjust width of the scrollbar */
+  }
+
+  /* Style the scrollbar thumb (handle) */
+  .rosterSidebar::-webkit-scrollbar-thumb {
+    background-color: #fbfbfb; /* Customize the thumb color */
+    border-radius: 10px; /* Optional: round corners of the thumb */
+  }
+
+  .rosterContainer{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .adminContainer, .studentContainer{
+    display: flex;
+    font-weight: bold;
+    font-size: 2rem;
+    border-bottom: 4px solid rgb(255, 255, 255);
+  }
+
+  .navbarLeft{
+    display: flex;
+    align-items: center;
+  }
+
+  .navbarContainer {
+    opacity: 0.3;
+    transform: translateY(-10px);
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  }
+  
+  .navbarContainer:hover {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .rosterStudent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+ .deletePerson:hover{
+  cursor: pointer;
+ }
+

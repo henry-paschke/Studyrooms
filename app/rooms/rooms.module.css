@@ -1,0 +1,133 @@
+.pageContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.roomContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.roomContainer:hover{
+    cursor: pointer;
+}
+
+.roomLeftContainer{
+    margin-left: 5%;
+}
+
+.roomLeftContainer > p:first-child{
+    font-weight: bold;
+}
+
+.roomContainer p{
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+.createRoomContainer, .joinRoomContainer{
+    position: absolute;
+    top: 35%;
+    transform: translateY(-35%);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 20px;
+    transition: all linear 0.2s;
+    border: 3px solid black;
+}
+
+.titleLabel, .roomCodeLabel{
+    color: black;
+    font-weight: bold;
+}
+
+.titleLabel > span, .roomCodeLabel > span{
+    color: red;
+}
+
+.titleInput, .roomCodeInput{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #050505;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.titleInput:focus, .roomCodeInput:focus{
+    outline: none;
+    border-color: #00a5cf;
+    box-shadow: 0 0 0 2px rgba(0, 165, 207, 0.5); 
+}
+
+.titleInput:hover, .roomCodeInput:hover{
+    border-color: #00a5cf;
+}
+
+.createButtonContainer, .joinButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.createButtonContainer > *, .joinButtonContainer > *{
+    margin: 0 5px 10px 5px;
+}
+
+.initialButtonContainer{
+    display: flex;
+    margin: 20px 0 20px 0;
+}
+
+.initialButtonContainer > div{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.roomRightContainer{
+    display: flex;
+    align-items: center;
+}
+
+.roomRightContainer > p:first-child{
+    padding-right: 5px;
+}
+
+.trashIcon{
+    display: none;
+}
+
+.roomContainer:hover .trashIcon{
+    display: flex;
+}
+
+.scrollbarthin::-webkit-scrollbar-track {
+    background-color: transparent; /* Make the track invisible */
+  }
+
+  /* Style the scrollbar itself */
+  .scrollbarthin::-webkit-scrollbar {
+    width: 8px; /* Adjust width of the scrollbar */
+  }
+
+  /* Style the scrollbar thumb (handle) */
+  .scrollbarthin::-webkit-scrollbar-thumb {
+    background-color: #fbfbfb; /* Customize the thumb color */
+    border-radius: 10px; /* Optional: round corners of the thumb */
+  }

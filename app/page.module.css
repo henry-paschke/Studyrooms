@@ -1,0 +1,33 @@
+.background {
+    background-image: url('/BG4.png');
+    background-size: 1000px 1000px; /* Ensure seamless tiling */
+    background-repeat: repeat; /* Allows continuous scrolling */
+    animation: scrollBackground 10s linear infinite;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+    will-change: background-position;
+}
+
+
+
+@keyframes scrollBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000px 1000px; /* Moves the exact tile size */
+    }
+}
+
+.main {
+    position: fixed;
+    top: 8vh;
+    width: 100%;
+    height: 92vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

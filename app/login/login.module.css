@@ -1,0 +1,65 @@
+
+.pageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+    background-color: white;
+    padding: 60px 35px 50px 35px;
+    border-radius: 45px;
+    max-width: 500px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.emailLabel, .passwordLabel{
+    font-weight: bold;
+}
+
+.emailLabel > span, .passwordLabel > span{
+    color: red;
+}
+
+.emailInput, .passwordInput{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #050505;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.emailInput:focus, .passwordInput:focus {
+    outline: none;
+    border-color: #00a5cf;
+    box-shadow: 0 0 0 2px rgba(0, 165, 207, 0.5); 
+}
+
+.emailInput:hover, .passwordInput:hover{
+    border-color: #00a5cf;
+}
+
+
+.submit{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.submit > input{
+    padding: 20px;
+    background-color: #e1ea65;
+    border-radius: 6px;
+}
+
+.submit > input:hover{
+    cursor: pointer;
+}
