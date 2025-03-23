@@ -10,7 +10,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "vercel-build": "pip3 install -r requirements.txt && prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
